@@ -1,5 +1,6 @@
 package expo.modules.material3alert
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
 
@@ -10,7 +11,9 @@ class Material3AlertModule : Module() {
     Name("Material3Alert")
 
     Function("show") {
-      "Hello world! 👋"
+      MaterialAlertDialogBuilder(appContext.reactContext!!.applicationContext)
+        .setTitle("This is an alert!")
+        .show()
     }
   }
 }
