@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "material-3-alert": ["../src/index"],
+      "material-3-alert/*": ["../src/*"]
+    }
+  }
+}
